@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+<title>رشدي استوديو | معرض اللوحات الفنية الأصلية</title>
+<meta name="description" content="رشدي استوديو - معرض فني فاخر للوحات أصلية بأسعار مناسبة">
+<meta name="theme-color" content="#0b0b0c">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== Loader ===== -->
+<div class="loader" id="loader">
+  <div class="loader-frame">
+    <span class="loader-brush"></span>
+  </div>
+</div>
+
+<!-- ===== Header (desktop) ===== -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="#home" class="brand">
+      <span class="brand-mark">ر</span>
+      <span class="brand-text">رشدي <em>استوديو</em></span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="#home" class="nav-link active">الرئيسية</a>
+      <a href="#gallery" class="nav-link">اللوحات</a>
+      <a href="#offers" class="nav-link">العروض</a>
+      <a href="#about" class="nav-link">من نحن</a>
+      <a href="#testimonials" class="nav-link">آراء العملاء</a>
+      <a href="#contact" class="nav-link">تواصل معنا</a>
+    </nav>
+    <button class="icon-btn search-toggle" id="searchToggle" aria-label="بحث">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+    <button class="icon-btn menu-toggle" id="menuToggle" aria-label="القائمة">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </div>
+  <div class="header-search" id="headerSearch">
+    <div class="header-search-inner">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" id="headerSearchInput" placeholder="ابحث عن لوحة بالاسم...">
+      <button id="headerSearchClose" aria-label="إغلاق"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== Mobile drawer ===== -->
+<div class="drawer" id="drawer">
+  <div class="drawer-panel">
+    <div class="drawer-head">
+      <span class="brand-text">رشدي <em>استوديو</em></span>
+      <button id="drawerClose" aria-label="إغلاق"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <nav class="drawer-nav">
+      <a href="#home"><i class="fa-solid fa-house"></i> الرئيسية</a>
+      <a href="#gallery"><i class="fa-solid fa-images"></i> اللوحات</a>
+      <a href="#offers"><i class="fa-solid fa-tags"></i> العروض</a>
+      <a href="#about"><i class="fa-solid fa-book-open"></i> من نحن</a>
+      <a href="#testimonials"><i class="fa-solid fa-star"></i> آراء العملاء</a>
+      <a href="#contact"><i class="fa-solid fa-envelope"></i> تواصل معنا</a>
+    </nav>
+    <div class="drawer-social">
+      <a href="https://wa.me/201000000000" target="_blank" aria-label="واتساب"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="#" target="_blank" aria-label="فيسبوك"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#" target="_blank" aria-label="إنستجرام"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+  </div>
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+</div>
+
+<main>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+  <div class="hero-canvas">
+    <span class="brush-stroke stroke-1"></span>
+    <span class="brush-stroke stroke-2"></span>
+    <span class="brush-stroke stroke-3"></span>
+    <span class="gold-dust"></span>
+  </div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">معرض فني فاخر · قطع أصلية</p>
+    <div class="hero-frame">
+      <h1 class="hero-title">رشدي استوديو</h1>
+    </div>
+    <p class="hero-subtitle">أجمل اللوحات الفنية الأصلية بأسعار تبدأ من 2 دولار</p>
+    <div class="hero-actions">
+      <a href="#gallery" class="btn btn-gold"><span>تصفح اللوحات</span><i class="fa-solid fa-arrow-left"></i></a>
+      <a href="#about" class="btn btn-ghost">تعرف علينا</a>
+    </div>
+    <div class="hero-scroll">
+      <span></span>
+      <p>مرر للأسفل</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SPECIAL OFFERS ===== -->
+<section class="offers" id="offers">
+  <div class="offers-inner">
+    <div class="offers-text reveal">
+      <p class="eyebrow eyebrow-light">عرض محدود</p>
+      <h2>خصومات تصل إلى <span>70%</span></h2>
+      <p class="offers-desc">لفترة محدودة، اقتنِ لوحتك المفضلة بأفضل سعر قبل انتهاء العرض.</p>
+      <div class="countdown" id="countdown">
+        <div class="cd-box"><span id="cdDays">00</span><small>يوم</small></div>
+        <div class="cd-box"><span id="cdHours">00</span><small>ساعة</small></div>
+        <div class="cd-box"><span id="cdMins">00</span><small>دقيقة</small></div>
+        <div class="cd-box"><span id="cdSecs">00</span><small>ثانية</small></div>
+      </div>
+      <a href="#gallery" class="btn btn-gold">اكتشف العروض</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section class="gallery-section" id="gallery">
+  <div class="section-head">
+    <p class="eyebrow">المعرض</p>
+    <h2>مجموعة اللوحات</h2>
+  </div>
+
+  <div class="gallery-controls">
+    <div class="search-box">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" id="gallerySearch" placeholder="ابحث باسم اللوحة...">
+    </div>
+    <div class="filter-chips" id="filterChips">
+      <button class="chip active" data-filter="all">الكل</button>
+      <button class="chip" data-filter="0-50">أقل من 50$</button>
+      <button class="chip" data-filter="50-150">50-150$</button>
+      <button class="chip" data-filter="150-300">150-300$</button>
+      <button class="chip" data-filter="300-750">300-750$</button>
+    </div>
+  </div>
+
+  <div class="gallery-grid" id="galleryGrid"></div>
+  <p class="no-results" id="noResults" hidden>لا توجد لوحات مطابقة لبحثك</p>
+</section>
+
+
+<!-- ===== STATISTICS ===== -->
+<section class="stats">
+  <div class="stats-grid">
+    <div class="stat-item reveal">
+      <span class="stat-number" data-target="500">0</span>
+      <p>لوحة فنية</p>
+    </div>
+    <div class="stat-item reveal">
+      <span class="stat-number" data-target="300">0</span>
+      <p>عميل سعيد</p>
+    </div>
+    <div class="stat-item reveal">
+      <span class="stat-number" data-target="25">0</span>
+      <p>دولة حول العالم</p>
+    </div>
+    <div class="stat-item reveal">
+      <span class="stat-number" data-target="1200">0</span>
+      <p>عملية بيع ناجحة</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="testimonials" id="testimonials">
+  <div class="section-head">
+    <p class="eyebrow">آراء عملائنا</p>
+    <h2>كلمات صادقة من محبي الفن</h2>
+  </div>
+  <div class="testimonials-grid">
+    <div class="testimonial-card reveal">
+      <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+      <p>"لوحة رائعة فاقت توقعاتي، الألوان حقيقية والتغليف كان احترافي جداً."</p>
+      <div class="t-author"><span class="t-avatar">س</span><div><strong>سارة أحمد</strong><small>القاهرة، مصر</small></div></div>
+    </div>
+    <div class="testimonial-card reveal">
+      <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+      <p>"تعامل راقٍ وسرعة في الرد على واتساب، اقتنيت لوحتين والجودة ممتازة."</p>
+      <div class="t-author"><span class="t-avatar">م</span><div><strong>محمد العلي</strong><small>الرياض، السعودية</small></div></div>
+    </div>
+    <div class="testimonial-card reveal">
+      <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+      <p>"أسعار مناسبة جداً مقارنة بجودة اللوحات، أنصح الجميع بتجربة رشدي استوديو."</p>
+      <div class="t-author"><span class="t-avatar">ن</span><div><strong>نور الهدى</strong><small>دبي، الإمارات</small></div></div>
+    </div>
+    <div class="testimonial-card reveal">
+      <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+      <p>"لوحة معلقة الآن في صالتي وكل من يزورني يسأل من أين اقتنيتها!"</p>
+      <div class="t-author"><span class="t-avatar">ي</span><div><strong>يوسف كمال</strong><small>عمّان، الأردن</small></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="about" id="about">
+  <div class="about-media reveal">
+    <img src="https://picsum.photos/seed/rashdi-studio-artist/700/900" alt="رشدي استوديو" loading="lazy">
+    <span class="about-frame"></span>
+  </div>
+  <div class="about-text reveal">
+    <p class="eyebrow">من نحن</p>
+    <h2>رشدي استوديو، حيث تتحدث الألوان</h2>
+    <p>رشدي استوديو هو معرض فني فاخر يجمع أعمالاً أصلية موقعة، تنتقى بعناية لتلامس الذوق الرفيع دون أن تثقل الميزانية. نؤمن أن الفن حق للجميع، لذا نقدم مجموعة واسعة تبدأ من قطع بسيطة الثمن وتمتد إلى لوحات فنية استثنائية.</p>
+    <p>كل لوحة تمر برحلة توثيق وتغليف دقيقة قبل أن تصل إليك، لتحمل معها روح صانعها وتفاصيله الدقيقة.</p>
+    <div class="about-points">
+      <div><i class="fa-solid fa-check"></i> شحن آمن لكل الدول</div>
+      <div><i class="fa-solid fa-check"></i> شهادة أصالة مع كل لوحة</div>
+      <div><i class="fa-solid fa-check"></i> دعم فني واستشارة اقتناء مجانية</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact" id="contact">
+  <div class="section-head">
+    <p class="eyebrow">تواصل معنا</p>
+    <h2>يسعدنا استقبال استفساراتك</h2>
+    <p class="contact-sub">فريقنا جاهز للرد عبر القنوات التالية على مدار الأسبوع</p>
+  </div>
+  <div class="contact-buttons">
+    <a href="https://wa.me/201000000000" target="_blank" class="contact-btn whatsapp"><i class="fa-brands fa-whatsapp"></i><span>واتساب</span></a>
+    <a href="#" target="_blank" class="contact-btn facebook"><i class="fa-brands fa-facebook-f"></i><span>فيسبوك</span></a>
+    <a href="#" target="_blank" class="contact-btn instagram"><i class="fa-brands fa-instagram"></i><span>إنستجرام</span></a>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="brand-text">رشدي <em>استوديو</em></span>
+      <p>معرض فني فاخر يحتفي بالجمال الأصيل.</p>
+    </div>
+    <div class="footer-links">
+      <h4>روابط سريعة</h4>
+      <a href="#home">الرئيسية</a>
+      <a href="#gallery">اللوحات</a>
+      <a href="#about">من نحن</a>
+      <a href="#contact">تواصل معنا</a>
+    </div>
+    <div class="footer-social">
+      <h4>تابعنا</h4>
+      <div class="social-icons">
+        <a href="https://wa.me/201000000000" target="_blank" aria-label="واتساب"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#" target="_blank" aria-label="فيسبوك"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" target="_blank" aria-label="إنستجرام"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>جميع الحقوق محفوظة © 2026</p>
+    <p>Designed &amp; Developed by <strong>KinProjects2026</strong></p>
+  </div>
+</footer>
+
+<!-- ===== PRODUCT MODAL ===== -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal-box">
+    <button class="modal-close" id="modalClose" aria-label="إغلاق"><i class="fa-solid fa-xmark"></i></button>
+    <div class="modal-image">
+      <img id="modalImg" src="" alt="">
+      <span class="modal-badge" id="modalBadge"></span>
+    </div>
+    <div class="modal-info">
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+      <div class="modal-price">
+        <span class="old-price" id="modalOld"></span>
+        <span class="new-price" id="modalNew"></span>
+      </div>
+      <button class="btn btn-gold btn-buy" id="modalBuy"><i class="fa-brands fa-whatsapp"></i><span>شراء الآن</span></button>
+    </div>
+  </div>
+  <div class="modal-backdrop" id="modalBackdrop"></div>
+</div>
+
+<!-- ===== Floating WhatsApp ===== -->
+<a href="https://wa.me/201000000000" target="_blank" class="fab-whatsapp" id="fabWhatsapp" aria-label="تواصل عبر واتساب">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<!-- ===== Mobile app-style bottom nav ===== -->
+<nav class="bottom-nav" id="bottomNav">
+  <a href="#home" class="bn-item active" data-target="home"><i class="fa-solid fa-house"></i><span>الرئيسية</span></a>
+  <a href="#gallery" class="bn-item" data-target="gallery"><i class="fa-solid fa-images"></i><span>اللوحات</span></a>
+  <a href="#offers" class="bn-item" data-target="offers"><i class="fa-solid fa-tags"></i><span>العروض</span></a>
+  <a href="#contact" class="bn-item" data-target="contact"><i class="fa-solid fa-envelope"></i><span>تواصل</span></a>
+</nav>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
